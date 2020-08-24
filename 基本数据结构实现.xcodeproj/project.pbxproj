@@ -16,6 +16,8 @@
 		B650B3ED24F3637C00F0714E /* SinglyLinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B650B3EC24F3637C00F0714E /* SinglyLinkedListNode.m */; };
 		B650B3F124F3960D00F0714E /* SinglyCycleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = B650B3F024F3960D00F0714E /* SinglyCycleLinkedList.m */; };
 		B650B3F424F396D300F0714E /* SinglyCycleLinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B650B3F324F396D300F0714E /* SinglyCycleLinkedListNode.m */; };
+		B650B3F824F3AED500F0714E /* DoubleLinkListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B650B3F724F3AED500F0714E /* DoubleLinkListNode.m */; };
+		B650B3FB24F3BFED00F0714E /* DoubleLinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = B650B3FA24F3BFED00F0714E /* DoubleLinkList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,10 @@
 		B650B3F024F3960D00F0714E /* SinglyCycleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinglyCycleLinkedList.m; sourceTree = "<group>"; };
 		B650B3F224F396D300F0714E /* SinglyCycleLinkedListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinglyCycleLinkedListNode.h; sourceTree = "<group>"; };
 		B650B3F324F396D300F0714E /* SinglyCycleLinkedListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinglyCycleLinkedListNode.m; sourceTree = "<group>"; };
+		B650B3F624F3AED500F0714E /* DoubleLinkListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleLinkListNode.h; sourceTree = "<group>"; };
+		B650B3F724F3AED500F0714E /* DoubleLinkListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleLinkListNode.m; sourceTree = "<group>"; };
+		B650B3F924F3BFED00F0714E /* DoubleLinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleLinkList.h; sourceTree = "<group>"; };
+		B650B3FA24F3BFED00F0714E /* DoubleLinkList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleLinkList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		B650B3CD24F3610E00F0714E /* 基本数据结构实现 */ = {
 			isa = PBXGroup;
 			children = (
+				B650B3F524F3AE5F00F0714E /* 双链表 */,
 				B650B3EE24F3936900F0714E /* 循环单链表 */,
 				B650B3E724F361F900F0714E /* 单链表 */,
 				B650B3CE24F3610E00F0714E /* AppDelegate.h */,
@@ -102,6 +109,17 @@
 				B650B3F324F396D300F0714E /* SinglyCycleLinkedListNode.m */,
 			);
 			path = "循环单链表";
+			sourceTree = "<group>";
+		};
+		B650B3F524F3AE5F00F0714E /* 双链表 */ = {
+			isa = PBXGroup;
+			children = (
+				B650B3F624F3AED500F0714E /* DoubleLinkListNode.h */,
+				B650B3F724F3AED500F0714E /* DoubleLinkListNode.m */,
+				B650B3F924F3BFED00F0714E /* DoubleLinkList.h */,
+				B650B3FA24F3BFED00F0714E /* DoubleLinkList.m */,
+			);
+			path = "双链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +193,11 @@
 			files = (
 				B650B3F424F396D300F0714E /* SinglyCycleLinkedListNode.m in Sources */,
 				B650B3ED24F3637C00F0714E /* SinglyLinkedListNode.m in Sources */,
+				B650B3F824F3AED500F0714E /* DoubleLinkListNode.m in Sources */,
 				B650B3D624F3610E00F0714E /* ViewController.m in Sources */,
 				B650B3D024F3610E00F0714E /* AppDelegate.m in Sources */,
 				B650B3F124F3960D00F0714E /* SinglyCycleLinkedList.m in Sources */,
+				B650B3FB24F3BFED00F0714E /* DoubleLinkList.m in Sources */,
 				B650B3EA24F362E300F0714E /* SinglyLinkedList.m in Sources */,
 				B650B3E124F3611100F0714E /* main.m in Sources */,
 			);

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SinglyLinkedList.h"
 #import "SinglyCycleLinkedList.h"
+#import "DoubleLinkList.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
 //    [self singlyLinkedListTest];//单链表测试
-    [self singlyCycleLinkedListTest];//循环单链表测试
+//    [self singlyCycleLinkedListTest];//循环单链表测试
+    [self doubleLinkListTest];//双向链表测试
 }
 
 //单链表测试
@@ -61,6 +63,21 @@
     [list removeNodeWithItem:100];
     NSLog(@"结果为:%d",[list searchNodeWithItem:100]);
     
+    [list travel];
+}
+
+//双向链表测试
+- (void)doubleLinkListTest {
+    DoubleLinkList *list = [[DoubleLinkList alloc] initWithNode:nil];
+    NSLog(@"当前双向链表是否是空链表%d",[list isEmpty]);
+    NSLog(@"当前双向链表的长度为%ld",[list length]);
+    
+    [list insertNodeAtTailWithItem:0];
+    [list insertNodeAtTailWithItem:1];
+    [list insertNodeAtTailWithItem:2];
+    [list insertNodeAtHeadWithItem:6];
+    [list insertNodeWithItem:100 atIndex:1];
+    [list insertNodeWithItem:1000 atIndex:1];
     [list travel];
 }
 @end
