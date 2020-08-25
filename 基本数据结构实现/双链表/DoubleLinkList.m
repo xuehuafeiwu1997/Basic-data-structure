@@ -67,7 +67,7 @@
 }
 
 - (void)insertNodeWithItem:(NSInteger)item atIndex:(NSInteger)index {
-    if (index < 0) {
+    if (index <= 0) {
         [self insertNodeAtHeadWithItem:item];
     } else if (index > [self length] - 1) {
         [self insertNodeAtTailWithItem:item];

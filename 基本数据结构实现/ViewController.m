@@ -10,6 +10,7 @@
 #import "SinglyLinkedList.h"
 #import "SinglyCycleLinkedList.h"
 #import "DoubleLinkList.h"
+#import "DoubleCycleLinkList.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,8 @@
     
 //    [self singlyLinkedListTest];//单链表测试
 //    [self singlyCycleLinkedListTest];//循环单链表测试
-    [self doubleLinkListTest];//双向链表测试
+//    [self doubleLinkListTest];//双向链表测试
+    [self doubleCycleLinkListTest];//双向循环链表测试
 }
 
 //单链表测试
@@ -80,4 +82,23 @@
     [list insertNodeWithItem:1000 atIndex:1];
     [list travel];
 }
+
+//双向循环链表测试
+- (void)doubleCycleLinkListTest {
+    DoubleCycleLinkList *list = [[DoubleCycleLinkList alloc] initWithNode:nil];
+    NSLog(@"当前的链表是否是空链表%d",[list isEmpty]);
+    NSLog(@"当前的链表的长度为%ld",[list length]);
+    
+    [list insertNodeAtTailWithItem:1];
+    [list insertNodeAtTailWithItem:2];
+    [list insertNodeAtTailWithItem:3];
+    [list insertNodeAtTailWithItem:4];
+    [list insertNodeAtTailWithItem:5];
+    [list insertNodeAtHeadWithItem:0];
+    [list removeNodeWithItem:0];
+    [list insertNodeWithItem:100 atIndex:0];
+    NSLog(@"元素是否在双链表中%d",[list searchNodeWithItem:1000]);
+    [list travel];
+}
+
 @end
