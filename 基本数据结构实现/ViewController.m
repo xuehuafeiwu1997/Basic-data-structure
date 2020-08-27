@@ -11,6 +11,7 @@
 #import "SinglyCycleLinkedList.h"
 #import "DoubleLinkList.h"
 #import "DoubleCycleLinkList.h"
+#import "BinaryTree.h"
 
 @interface ViewController ()
 
@@ -26,7 +27,8 @@
 //    [self singlyLinkedListTest];//单链表测试
 //    [self singlyCycleLinkedListTest];//循环单链表测试
 //    [self doubleLinkListTest];//双向链表测试
-    [self doubleCycleLinkListTest];//双向循环链表测试
+//    [self doubleCycleLinkListTest];//双向循环链表测试
+    [self BinaryTreeTest];//二叉树测试
 }
 
 //单链表测试
@@ -99,6 +101,18 @@
     [list insertNodeWithItem:100 atIndex:0];
     NSLog(@"元素是否在双链表中%d",[list searchNodeWithItem:1000]);
     [list travel];
+}
+
+//二叉树测试
+- (void)BinaryTreeTest {
+    BinaryTree *tree = [[BinaryTree alloc] init];
+    for (int i = 0; i < 10; i ++) {
+        [tree add:i];
+    }
+    [tree breathTraversal]; //广序遍历 结果：0 1 2 3 4 5 6 7 8 9
+    [tree preOrderTraversal:tree.root]; //前序遍历 结果 0 1 3 7 8 4 9 2 5 6
+    [tree inOrderTraversal:tree.root]; //中序遍历 结果 7 3 8 1 9 4 0 5 2 6
+    [tree postorderTraversal:tree.root]; //后序遍历 结果 7 8 3 9 4 1 5 6 2 0
 }
 
 @end
