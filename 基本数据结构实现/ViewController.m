@@ -12,6 +12,7 @@
 #import "DoubleLinkList.h"
 #import "DoubleCycleLinkList.h"
 #import "BinaryTree.h"
+#import "InvertBinaryTree.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,8 @@
 //    [self singlyCycleLinkedListTest];//循环单链表测试
 //    [self doubleLinkListTest];//双向链表测试
 //    [self doubleCycleLinkListTest];//双向循环链表测试
-    [self BinaryTreeTest];//二叉树测试
+//    [self BinaryTreeTest];//二叉树测试
+    [self InvertBinaryTreeTest];//翻转二叉树测试
 }
 
 //单链表测试
@@ -113,6 +115,23 @@
     [tree preOrderTraversal:tree.root]; //前序遍历 结果 0 1 3 7 8 4 9 2 5 6
     [tree inOrderTraversal:tree.root]; //中序遍历 结果 7 3 8 1 9 4 0 5 2 6
     [tree postorderTraversal:tree.root]; //后序遍历 结果 7 8 3 9 4 1 5 6 2 0
+}
+
+- (void)InvertBinaryTreeTest {
+    InvertBinaryTree *tree = [[InvertBinaryTree alloc] init];
+    [tree add:4];
+    [tree add:2];
+    [tree add:7];
+    [tree add:1];
+    [tree add:3];
+    [tree add:6];
+    [tree add:9];
+    NSLog(@"翻转二叉树之前的结果为---------");//4 2 7 1 3 6 9
+    [tree breathTraversal];
+    [tree invertBinaryTree:tree.root];
+    NSLog(@"翻转二叉树之后的结果为--------");//4 7 2 9 6 3 1
+    [tree breathTraversal];
+    
 }
 
 @end

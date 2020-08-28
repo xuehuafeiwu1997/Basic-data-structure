@@ -22,6 +22,7 @@
 		B650B40324F4A6EC00F0714E /* DoubleCycleLinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = B650B40224F4A6EC00F0714E /* DoubleCycleLinkList.m */; };
 		B658A6A824F6669B00C47F5F /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = B658A6A724F6669B00C47F5F /* Node.m */; };
 		B658A6AB24F668A600C47F5F /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B658A6AA24F668A600C47F5F /* BinaryTree.m */; };
+		B6DBC8AF24F75EB0001C6B23 /* InvertBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DBC8AE24F75EB0001C6B23 /* InvertBinaryTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		B658A6A724F6669B00C47F5F /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		B658A6A924F668A600C47F5F /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 		B658A6AA24F668A600C47F5F /* BinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
+		B6DBC8AD24F75EB0001C6B23 /* InvertBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvertBinaryTree.h; sourceTree = "<group>"; };
+		B6DBC8AE24F75EB0001C6B23 /* InvertBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvertBinaryTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		B650B3CD24F3610E00F0714E /* 基本数据结构实现 */ = {
 			isa = PBXGroup;
 			children = (
+				B6DBC8AC24F75E8B001C6B23 /* 翻转二叉树 */,
 				B650B40424F4BD7700F0714E /* 二叉树 */,
 				B650B3FD24F4A56500F0714E /* 双向循环链表 */,
 				B650B3F524F3AE5F00F0714E /* 双链表 */,
@@ -158,6 +162,15 @@
 			path = "二叉树";
 			sourceTree = "<group>";
 		};
+		B6DBC8AC24F75E8B001C6B23 /* 翻转二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				B6DBC8AD24F75EB0001C6B23 /* InvertBinaryTree.h */,
+				B6DBC8AE24F75EB0001C6B23 /* InvertBinaryTree.m */,
+			);
+			path = "翻转二叉树";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DBC8AF24F75EB0001C6B23 /* InvertBinaryTree.m in Sources */,
 				B650B3F424F396D300F0714E /* SinglyCycleLinkedListNode.m in Sources */,
 				B650B3ED24F3637C00F0714E /* SinglyLinkedListNode.m in Sources */,
 				B650B3F824F3AED500F0714E /* DoubleLinkListNode.m in Sources */,
